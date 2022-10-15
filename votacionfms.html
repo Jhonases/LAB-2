@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="selector">
+        <select name="json" id="prueba" onChange="main()">
+            <option value="0">Selecciona un país</option>
+            <option value="1">Chile</option>
+            <option value="2">España</option>
+            <option value="3">México</option>
+            <option value="4">Argentina</option>
+        </select>
+    </div>
+
+    <div id="mostrar"></div>
+
+    <div>
+        <input type="text" id="mc1" placeholder="Nombre de un participante" required>
+        <button onClick="agregarNombre()">Agregar Nombre</button>
+    </div>
+
+    <div>
+        <table id="tabla-par">
+            <tr>
+                <th>Participante MC1</th>
+                <th colspan="6">Patrones</th>
+                <th colspan="1">Escena</th>
+                <th>Flow</th>
+                <th>Skills</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Player 1</td>
+                <td> <input type="number" style="width: 115px" id="p1" required></td>
+                <td> <input type="number" style="width: 115px" id="p2" required></td>
+                <td> <input type="number" style="width: 115px" id="p3" required></td>
+                <td> <input type="number" style="width: 115px" id="p4" required></td>
+                <td> <input type="number" style="width: 115px" id="p5" required></td>
+                <td> <input type="number" style="width: 115px" id="p6" required></td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td id="result1"></td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td> <input type="number" style="width: 115px" id="p1" required></td>
+                <td> <input type="number" style="width: 115px" id="p2" required></td>
+                <td> <input type="number" style="width: 115px" id="p3" required></td>
+                <td> <input type="number" style="width: 115px" id="p4" required></td>
+                <td> <input type="number" style="width: 115px" id="p5" required></td>
+                <td> <input type="number" style="width: 115px" id="p6" required></td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px" id="" required>
+                </td>
+
+                <td id="result2"></td>
+            </tr>
+        </table>
+        <center>
+            <button onClick="calcularResultado()">Calcular R1</button>
+            <button>Ganador R1</button>
+        </center>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
