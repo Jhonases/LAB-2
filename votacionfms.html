@@ -10,154 +10,205 @@
 </head>
 
 <body>
-    <div class="selector">
-        <select name="json" id="prueba" onChange="main()">
-            <option value="0">Selecciona un país</option>
-            <option value="1">Chile</option>
-            <option value="2">España</option>
-            <option value="3">México</option>
-            <option value="4">Argentina</option>
-        </select>
-    </div>
-
-    <div id="mostrar"></div>
-
-    <div>
-        <input type="text" id="mc1" placeholder="Nombre de un participante" maxlength="7">
-        <input type="text" id="mc2" placeholder="Nombre de un participante" maxlength="7">
-        <button onClick="agregarNombre()">Agregar Nombre</button>
-    </div>
-
-
-    <div>
-        <table id="tabla1">
-            <tr>
-                <th>Participante MC</th>
-                <th colspan="6">Patrones</th>
-                <th colspan="1">Escena</th>
-                <th>Flow</th>
-                <th>Skills</th>
-                <th>Total</th>
-            </tr>
-            <tr id="fila1">
-                <th id="nombre-mc1">Mc - 1</th>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td id="result1"></td>
-            </tr>
-            <tr id="fila2">
-                <th id="nombre-mc2">Mc - 2</th>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td id="result2"></td>
-            </tr>
-        </table>
-
-        <center>
-            <button onClick="calcularResultado()">Calcular R1</button>
-            <button>Ganador R1</button>
-        </center>
-
-        <table id="tabla2">
-            <tr>
-                <th>Participante MC</th>
-                <th colspan="6">Patrones</th>
-                <th colspan="1">Escena</th>
-                <th>Flow</th>
-                <th>Skills</th>
-                <th>Total</th>
-            </tr>
-            <tr id="fila3">
-                <th id="nombre-mc1-2">Mc - 1</th>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td id="result3"></td>
-            </tr>
-            <tr id="fila4">
-                <th id="nombre-mc2-2">Mc - 2</th>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-                <td> <input type="number" style="width: 115px"></td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td>
-                    <input type="number" style="width: 115px">
-                </td>
-
-                <td id="result4"></td>
-            </tr>
-        </table>
-
-        <center>
-            <button onClick="calcular_Resultado()">Calcular R2</button>
-            <button>Ganador R2</button>
-        </center>
-
-    </div>
-
-
-    <script src="index.js"></script>
+    <header>
+        <div class="logo">
+            <img src="img/logo1.png" alt="logo-de-la-compañia">
+            <h2 class="nombre-empresa">Master Series</h2>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor horizontal">
+            <div class="selector">
+                <h4 class="center">MC 1</h4>
+                <label for="pais">Seleciona un pais: </label>
+                <select name="json" id="prueba" onchange="main()">
+                    <option value="0">Selecciona un país</option>
+                    <option value="1">Chile</option>
+                    <option value="2">España</option>
+                    <option value="3">México</option>
+                    <option value="4">Argentina</option>
+                </select>
+            </div>
+            <div class="selector">
+                <h4 class="center">MC 2</h4>
+                <label for="pais">Seleciona un pais: </label>
+                <select name="json" id="prueba2" onchange="main()">
+                    <option value="0">Selecciona un país</option>
+                    <option value="1">Chile</option>
+                    <option value="2">España</option>
+                    <option value="3">México</option>
+                    <option value="4">Argentina</option>
+                </select>
+            </div>
+        </div>
+        <div class="contenedor horizontal">
+            <div class="contenedor-tabla1">
+                <div class="tablas1">
+                    <div id="mostrar"></div>
+                </div>
+            </div>
+            <div class="contenedor-tabla1">
+                <div class="tablas1">
+                    <div id="mostrar2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor horizontal">
+            <div class="MCS">
+                <h4 class="center">MC 1</h4>
+                <input type="text" id="mc1" placeholder="Nombre de un participante" maxlength="7">
+            </div>
+            
+            <div class="MCS">
+                <h4 class="center">MC 2</h4>
+                <input type="text" id="mc2" placeholder="Nombre de un participante" maxlength="7">
+            </div>
+        </div>
+            
+        <div class="center">
+            <button onClick="agregarNombre()">Agregar Nombre</button>
+        </div>
+    
+    
+        <div class="contenedor">
+            <table id="tabla1">
+                <tr>
+                    <th>Participante MC</th>
+                    <th colspan="6">Patrones</th>
+                    <th colspan="1">Escena</th>
+                    <th>Flow</th>
+                    <th>Skills</th>
+                    <th>Total</th>
+                </tr>
+                <tr id="fila1">
+                    <th id="nombre-mc1">Mc - 1</th>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td id="result1"></td>
+                </tr>
+                <tr id="fila2">
+                    <th id="nombre-mc2">Mc - 2</th>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td id="result2"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="contenedor horizontal">
+            <div class="boton">
+                <button class="boton-style" onClick="calcularResultado()">Calcular R1</button>
+            </div>
+            <div class="boton">
+                <button class="boton-style">Ganador R1</button>
+                <div class="tablas2">
+                    <div id="mostar-ganador1"></div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="contenedor">
+            <table id="tabla2">
+                <tr>
+                    <th>Participante MC</th>
+                    <th colspan="6">Patrones</th>
+                    <th colspan="1">Escena</th>
+                    <th>Flow</th>
+                    <th>Skills</th>
+                    <th>Total</th>
+                </tr>
+                <tr id="fila3">
+                    <th id="nombre-mc1-2">Mc - 1</th>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td id="result3"></td>
+                </tr>
+                <tr id="fila4">
+                    <th id="nombre-mc2-2">Mc - 2</th>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+                    <td> <input type="number" style="width: 115px" min="0" max="4"></td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td>
+                        <input type="number" style="width: 115px" min="0" max="2">
+                    </td>
+    
+                    <td id="result4"></td>
+                </tr>
+            </table>
+        </div>
+            <center>
+                <button onClick="calcular_Resultado()">Calcular R2</button>
+                <button>Ganador R2</button>
+            </center>
+        
+    
+        
+    
+    
+        <script src="index.js"></script>
+    </main>
 </body>
 
 </html>

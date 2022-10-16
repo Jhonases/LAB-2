@@ -7,7 +7,15 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield;
 } */
+:root {
+    --fuenteHeading: 'Montserrat', sans-serif;
+    --fuenteParrafos: 'Montserrat', sans-serif;
+    --fuenteLogo:  'Cookie', sans-serif;
 
+    --primario: whitesmoke;
+    --gris: #dbdbdbd5;
+    --gris-oscuro: #b8b8b891;
+}
 * {
     margin: 0;
     padding: 0;
@@ -24,4 +32,138 @@ table, th, td, tr {
     border: 1px solid black;
     display: inline-block;
     width: 70vh;
+}
+h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: var(--fuenteLogo);
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+body{
+    margin: 0;
+}
+main{
+    color: #222; 
+    font-family: var(--fuenteParrafos);
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+article{
+    background-color: #ddd;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+section{
+
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+header {
+    display: flex;
+    min-height: 200px;
+    justify-content: space-between;
+    background-color: coral;
+    align-items: center;
+    padding: 5px 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 10px;
+}
+.contenedor-tabla1 {
+    width: 50%;
+    padding: 10px;
+}
+.contenedor-ganador {
+    width: 50%;
+    padding: 10px;
+}
+.MCS {
+    width: 50%;
+    padding: 5px 220px;
+}
+.tablas1 {
+	border-radius: 10px;
+    border: 1px solid #999;
+    border-radius: 20px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+}
+.tablas2 {
+    background-color: #ddd;
+    border: 1px solid #999;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 100px;
+
+}
+.selector{
+    width: 50%;
+    padding: 5px 160px;
+}
+.horizontal{
+    display: flex;
+}
+.boton{
+    width: 50%;
+    padding: 50px 250px;
+
+}
+.boton-style{
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    border-radius: 20px;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
 }

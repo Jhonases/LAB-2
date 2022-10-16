@@ -81,32 +81,35 @@ function chile(parsing) {
 }
 
 function espana(parsing) {
-    var muestra = '<h1> Representantes de España</h1>' + '<ol>';
+    var muestra = '<h1> Representantes de España</h1>' + '<section>'+'<ol>';
 
     for (let i in parsing[0].nombres) {
         muestra += '<li>' + parsing[0].nombres[i] + '</li>';
     }
     muestra += '</ol>';
+    muestra += '/<section>';
     document.getElementById('mostrar').innerHTML = muestra;
 }
 
 function mexico(parsing) {
-    var muestra = '<h1> Representantes de México</h1>' + '<ol>';
+    var muestra = '<h1> Representantes de México</h1>' + '<section>'+'<ol>';
 
     for (let i in parsing[0].nombres) {
         muestra += '<li>' + parsing[0].nombres[i] + '</li>';
     }
     muestra += '</ol>';
+    muestra += '/<section>';
     document.getElementById('mostrar').innerHTML = muestra;
 }
 
 function argentina(parsing) {
-    var muestra = '<h1> Representantes de Argentina</h1>' + '<ol>';
+    var muestra = '<h1> Representantes de Argentina</h1>' + '<section>'+'<ol>';
 
     for (let i in parsing[0].nombres) {
         muestra += '<li>' + parsing[0].nombres[i] + '</li>';
     }
     muestra += '</ol>';
+    muestra += '/<section>';
     document.getElementById('mostrar').innerHTML = muestra;
 }
 
@@ -157,7 +160,5 @@ function calcular_Resultado() {
     console.log(resultado4)
     document.getElementById('result4').innerHTML = resultado4;
 }
-
-
 
 
