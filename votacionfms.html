@@ -23,74 +23,140 @@
     <div id="mostrar"></div>
 
     <div>
-        <input type="text" id="mc1" placeholder="Nombre de un participante" required>
+        <input type="text" id="mc1" placeholder="Nombre de un participante" maxlength="7">
+        <input type="text" id="mc2" placeholder="Nombre de un participante" maxlength="7">
         <button onClick="agregarNombre()">Agregar Nombre</button>
     </div>
 
+
     <div>
-        <table id="tabla-par">
+        <table id="tabla1">
             <tr>
-                <th>Participante MC1</th>
+                <th>Participante MC</th>
                 <th colspan="6">Patrones</th>
                 <th colspan="1">Escena</th>
                 <th>Flow</th>
                 <th>Skills</th>
                 <th>Total</th>
             </tr>
-            <tr>
-                <td>Player 1</td>
-                <td> <input type="number" style="width: 115px" id="p1" required></td>
-                <td> <input type="number" style="width: 115px" id="p2" required></td>
-                <td> <input type="number" style="width: 115px" id="p3" required></td>
-                <td> <input type="number" style="width: 115px" id="p4" required></td>
-                <td> <input type="number" style="width: 115px" id="p5" required></td>
-                <td> <input type="number" style="width: 115px" id="p6" required></td>
+            <tr id="fila1">
+                <th id="nombre-mc1">Mc - 1</th>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td id="result1"></td>
             </tr>
-            <tr>
-                <td>Player 2</td>
-                <td> <input type="number" style="width: 115px" id="p1" required></td>
-                <td> <input type="number" style="width: 115px" id="p2" required></td>
-                <td> <input type="number" style="width: 115px" id="p3" required></td>
-                <td> <input type="number" style="width: 115px" id="p4" required></td>
-                <td> <input type="number" style="width: 115px" id="p5" required></td>
-                <td> <input type="number" style="width: 115px" id="p6" required></td>
+            <tr id="fila2">
+                <th id="nombre-mc2">Mc - 2</th>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td>
-                    <input type="number" style="width: 115px" id="" required>
+                    <input type="number" style="width: 115px">
                 </td>
 
                 <td id="result2"></td>
             </tr>
         </table>
+
         <center>
             <button onClick="calcularResultado()">Calcular R1</button>
             <button>Ganador R1</button>
         </center>
+
+        <table id="tabla2">
+            <tr>
+                <th>Participante MC</th>
+                <th colspan="6">Patrones</th>
+                <th colspan="1">Escena</th>
+                <th>Flow</th>
+                <th>Skills</th>
+                <th>Total</th>
+            </tr>
+            <tr id="fila3">
+                <th id="nombre-mc1-2">Mc - 1</th>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td id="result3"></td>
+            </tr>
+            <tr id="fila4">
+                <th id="nombre-mc2-2">Mc - 2</th>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+                <td> <input type="number" style="width: 115px"></td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td>
+                    <input type="number" style="width: 115px">
+                </td>
+
+                <td id="result4"></td>
+            </tr>
+        </table>
+
+        <center>
+            <button onClick="calcular_Resultado()">Calcular R2</button>
+            <button>Ganador R2</button>
+        </center>
+
     </div>
 
-    
+
     <script src="index.js"></script>
 </body>
 
