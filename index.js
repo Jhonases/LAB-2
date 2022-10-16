@@ -56,18 +56,18 @@ function main() {
     }
 }
 
-function agregarNombre() {
-    if (document.getElementById("mc1").value) {
-        var nombre = document.getElementById("mc1").value;
-        document.getElementById('nombre-mc1').innerHTML = nombre
-        document.getElementById('nombre-mc1-2').innerHTML = nombre
-    }
+function agregarNombre1() {
+    var nombre = document.getElementById("mc1").value;
+    document.getElementById('nombre-mc1').innerHTML = nombre
+    document.getElementById('nombre-mc1-2').innerHTML = nombre
 
-    if (document.getElementById("mc2").value) {
-        var nombre = document.getElementById("mc2").value;
-        document.getElementById('nombre-mc2').innerHTML = nombre
-        document.getElementById('nombre-mc2-2').innerHTML = nombre
-    }
+}
+
+function agregarNombre2() {
+    var nombre = document.getElementById("mc2").value;
+    document.getElementById('nombre-mc2').innerHTML = nombre
+    document.getElementById('nombre-mc2-2').innerHTML = nombre
+    
 }
 
 function chile(parsing) {

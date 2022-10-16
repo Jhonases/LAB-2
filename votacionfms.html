@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <div class="selector">
                 <h4 class="center">MC 2</h4>
                 <label for="pais">Seleciona un pais: </label>
-                <select name="json" id="prueba2" onchange="main()">
+                <select name="json" id="prueba" onchange="main()">
                     <option value="0">Selecciona un país</option>
                     <option value="1">Chile</option>
                     <option value="2">España</option>
@@ -49,7 +49,7 @@
             </div>
             <div class="contenedor-tabla1">
                 <div class="tablas1">
-                    <div id="mostrar2"></div>
+                    <div id="mostrar"></div>
                 </div>
             </div>
         </div>
@@ -57,18 +57,20 @@
             <div class="MCS">
                 <h4 class="center">MC 1</h4>
                 <input type="text" id="mc1" placeholder="Nombre de un participante" maxlength="7">
+                <div class="center">
+                    <button onClick="agregarNombre1()">Agregar Nombre</button>
+                </div>
             </div>
             
             <div class="MCS">
                 <h4 class="center">MC 2</h4>
                 <input type="text" id="mc2" placeholder="Nombre de un participante" maxlength="7">
+                <div class="center">
+                    <button onClick="agregarNombre2()">Agregar Nombre</button>
+                </div>
+                
             </div>
         </div>
-            
-        <div class="center">
-            <button onClick="agregarNombre()">Agregar Nombre</button>
-        </div>
-    
     
         <div class="contenedor">
             <table id="tabla1">
@@ -130,10 +132,10 @@
         </div>
         <div class="contenedor horizontal">
             <div class="boton">
-                <button class="boton-style" onClick="calcularResultado()">Calcular R1</button>
+                <button conClick="calcularResultado()">Calcular R1</button>
             </div>
             <div class="boton">
-                <button class="boton-style">Ganador R1</button>
+                <button>Ganador R1</button>
                 <div class="tablas2">
                     <div id="mostar-ganador1"></div>
                 </div>
@@ -198,15 +200,18 @@
                 </tr>
             </table>
         </div>
-            <center>
-                <button onClick="calcular_Resultado()">Calcular R2</button>
+        <div class="contenedor horizontal">
+            <div class="boton">
+                <button onClick="calcularResultado()">Calcular R2</button>
+            </div>
+            <div class="boton">
                 <button>Ganador R2</button>
-            </center>
-        
-    
-        
-    
-    
+                <div class="tablas2">
+                    <div id="mostar-ganador1"></div>
+                </div>
+            </div>
+        </div>
+            
         <script src="index.js"></script>
     </main>
 </body>
